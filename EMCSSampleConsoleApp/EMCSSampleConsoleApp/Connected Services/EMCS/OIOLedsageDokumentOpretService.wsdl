@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:struct="urn:oio:skat:emcs:ws:1.0.1" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns="" name="OIOLedsageDokumentOpretService" targetNamespace="urn:oio:skat:emcs:ws:1.0.1" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <xs:annotation xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:documentation>OIO-udgave af tilsvarende forretningsservice.  Sætter eksterne afsendere i stand til at sende et nyt ledsagedokument til validering. Servicen returnere ARC-nummeret samt valideringsdatoen på det elektroniske ledsagedokument.</xs:documentation>
+  </xs:annotation>
+  <wsdl:types>
+    <xsd:schema targetNamespace="urn:oio:skat:emcs:ws:1.0.1" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <xsd:include schemaLocation="urn/oio/skat/emcs/ws/1_0_1/OIOLedsageDokumentOpretInterface.xsd" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="OIOLedsageDokumentOpretServiceRequest">
+    <wsdl:part name="Request" element="struct:OIOLedsageDokumentOpret_I" />
+  </wsdl:message>
+  <wsdl:message name="OIOLedsageDokumentOpretServiceResponse">
+    <wsdl:part name="Response" element="struct:OIOLedsageDokumentOpret_O" />
+  </wsdl:message>
+  <wsdl:portType name="OIOLedsageDokumentOpretServicePortType">
+    <wsdl:operation name="getOIOLedsageDokumentOpret">
+      <wsdl:input message="struct:OIOLedsageDokumentOpretServiceRequest" />
+      <wsdl:output message="struct:OIOLedsageDokumentOpretServiceResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="OIOLedsageDokumentOpretServiceBinding" type="struct:OIOLedsageDokumentOpretServicePortType">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="getOIOLedsageDokumentOpret">
+      <soap:operation soapAction="getOIOLedsageDokumentOpret" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" namespace="http://skat.dk/begrebsmodel/2009/01/15/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" namespace="http://skat.dk/begrebsmodel/2009/01/15/" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="OIOLedsageDokumentOpretService">
+    <wsdl:port name="OIOLedsageDokumentOpretServicePort" binding="struct:OIOLedsageDokumentOpretServiceBinding">
+      <soap:address location="http://localhost/EMCS_OIOLedsageDokumentOpret/OIOLedsageDokumentOpretServicePort" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

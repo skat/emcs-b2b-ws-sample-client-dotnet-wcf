@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="805daa9f-89f5-4b38-a599-00610f384b2c" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://raw.githubusercontent.com/skat/emcs-b2b-ws/master/wsdl/OIOLedsageDokumentOpret/OIOLedsageDokumentOpret.wsdl" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="IE815Struktur.xsd" MetadataType="Schema" ID="4befb81a-77ec-42b4-bc0d-ed626fb44ca2" SourceId="1" SourceUrl="https://raw.githubusercontent.com/skat/emcs-b2b-ws/master/wsdl/OIOLedsageDokumentOpret/urn/oio/skat/emcs/ws/1_0_1/IE815Struktur.xsd" />
+    <MetadataFile FileName="OIOLedsageDokumentOpretInterface.xsd" MetadataType="Schema" ID="5d988dce-3bd5-45db-85f4-264a732e2629" SourceId="1" SourceUrl="https://raw.githubusercontent.com/skat/emcs-b2b-ws/master/wsdl/OIOLedsageDokumentOpret/urn/oio/skat/emcs/ws/1_0_1/OIOLedsageDokumentOpretInterface.xsd" />
+    <MetadataFile FileName="HovedOplysningerSvar.xsd" MetadataType="Schema" ID="62c873cf-3976-4383-a865-57dbbaeb8a50" SourceId="1" SourceUrl="https://raw.githubusercontent.com/skat/emcs-b2b-ws/master/wsdl/OIOLedsageDokumentOpret/skat_dk/basis/kontekst/xml/schemas/2006/09/01/HovedOplysningerSvar.xsd" />
+    <MetadataFile FileName="OIOLedsageDokumentOpret_O.xsd" MetadataType="Schema" ID="b10d1307-5839-40cc-9f98-7d2d717f3d84" SourceId="1" SourceUrl="https://raw.githubusercontent.com/skat/emcs-b2b-ws/master/wsdl/OIOLedsageDokumentOpret/urn/oio/skat/emcs/ws/1_0_1/OIOLedsageDokumentOpret_O.xsd" />
+    <MetadataFile FileName="LedsagedokumentARCIdentifikator.xsd" MetadataType="Schema" ID="c73d9537-f2c5-4667-b6e5-4f3fbf0c5598" SourceId="1" SourceUrl="https://raw.githubusercontent.com/skat/emcs-b2b-ws/master/wsdl/OIOLedsageDokumentOpret/urn/oio/skat/emcs/1_0_1/LedsagedokumentARCIdentifikator.xsd" />
+    <MetadataFile FileName="OIOLedsageDokumentOpret_I.xsd" MetadataType="Schema" ID="ddc1af8b-d266-458d-9acd-4a1a888abaf8" SourceId="1" SourceUrl="https://raw.githubusercontent.com/skat/emcs-b2b-ws/master/wsdl/OIOLedsageDokumentOpret/urn/oio/skat/emcs/ws/1_0_1/OIOLedsageDokumentOpret_I.xsd" />
+    <MetadataFile FileName="TransaktionTid.xsd" MetadataType="Schema" ID="c42908bd-3393-4dc1-bc73-d5bab4855333" SourceId="1" SourceUrl="https://raw.githubusercontent.com/skat/emcs-b2b-ws/master/wsdl/OIOLedsageDokumentOpret/skat_dk/basis/kontekst/xml/schemas/2006/09/01/TransaktionTid.xsd" />
+    <MetadataFile FileName="SvarStruktur.xsd" MetadataType="Schema" ID="14a7742f-91eb-4e3f-b6e0-3365fbb2fac9" SourceId="1" SourceUrl="https://raw.githubusercontent.com/skat/emcs-b2b-ws/master/wsdl/OIOLedsageDokumentOpret/skat_dk/basis/kontekst/xml/schemas/2006/09/01/SvarStruktur.xsd" />
+    <MetadataFile FileName="AdvisStruktur.xsd" MetadataType="Schema" ID="7101d4f1-5fd8-491d-ba7a-2ba58f2fdbbf" SourceId="1" SourceUrl="https://raw.githubusercontent.com/skat/emcs-b2b-ws/master/wsdl/OIOLedsageDokumentOpret/skat_dk/basis/kontekst/xml/schemas/2006/09/01/AdvisStruktur.xsd" />
+    <MetadataFile FileName="AdvisIdentifikator.xsd" MetadataType="Schema" ID="141d795c-3af7-4caf-b279-c735ff488f50" SourceId="1" SourceUrl="https://raw.githubusercontent.com/skat/emcs-b2b-ws/master/wsdl/OIOLedsageDokumentOpret/skat_dk/basis/kontekst/xml/schemas/2006/09/01/AdvisIdentifikator.xsd" />
+    <MetadataFile FileName="CVRnumberIdentifier.xsd" MetadataType="Schema" ID="545d72c0-2cb7-4761-ae4d-98dc6ce4fe21" SourceId="1" SourceUrl="https://raw.githubusercontent.com/skat/emcs-b2b-ws/master/wsdl/OIOLedsageDokumentOpret/cvr_dk/xml/schemas/2005/03/22/CVRnumberIdentifier.xsd" />
+    <MetadataFile FileName="VirksomhedSENummerIdentifikator.xsd" MetadataType="Schema" ID="4b7c5f2e-23ae-4f70-9286-e261edbcd91c" SourceId="1" SourceUrl="https://raw.githubusercontent.com/skat/emcs-b2b-ws/master/wsdl/OIOLedsageDokumentOpret/skat_dk/motor/class/virksomhed/xml/schemas/20080401/VirksomhedSENummerIdentifikator.xsd" />
+    <MetadataFile FileName="ServiceIdentifikator.xsd" MetadataType="Schema" ID="7402b21b-b8ed-4855-a4f2-4364ca2cde1e" SourceId="1" SourceUrl="https://raw.githubusercontent.com/skat/emcs-b2b-ws/master/wsdl/OIOLedsageDokumentOpret/skat_dk/basis/kontekst/xml/schemas/2006/09/01/ServiceIdentifikator.xsd" />
+    <MetadataFile FileName="VirksomhedIdentifikationStruktur.xsd" MetadataType="Schema" ID="7f8f9ab1-0623-4c8f-b37d-044f0411a24d" SourceId="1" SourceUrl="https://raw.githubusercontent.com/skat/emcs-b2b-ws/master/wsdl/OIOLedsageDokumentOpret/urn/oio/skat/emcs/ws/1_0_1/VirksomhedIdentifikationStruktur.xsd" />
+    <MetadataFile FileName="AdvisTekst.xsd" MetadataType="Schema" ID="3bb048f7-578d-4a7c-9b44-2396e9c5c07b" SourceId="1" SourceUrl="https://raw.githubusercontent.com/skat/emcs-b2b-ws/master/wsdl/OIOLedsageDokumentOpret/skat_dk/basis/kontekst/xml/schemas/2006/09/01/AdvisTekst.xsd" />
+    <MetadataFile FileName="FejlTekst.xsd" MetadataType="Schema" ID="6311ad14-4ec4-444b-b285-aeeb0629ebe4" SourceId="1" SourceUrl="https://raw.githubusercontent.com/skat/emcs-b2b-ws/master/wsdl/OIOLedsageDokumentOpret/skat_dk/basis/kontekst/xml/schemas/2006/09/01/FejlTekst.xsd" />
+    <MetadataFile FileName="LedsagedokumentValideretDato.xsd" MetadataType="Schema" ID="94da918e-57a1-4b51-8e7f-692a1daf6d35" SourceId="1" SourceUrl="https://raw.githubusercontent.com/skat/emcs-b2b-ws/master/wsdl/OIOLedsageDokumentOpret/skat_dk/emcs/class/ledsagedokument/xml/schemas/20080301/LedsagedokumentValideretDato.xsd" />
+    <MetadataFile FileName="TransaktionIdentifikator.xsd" MetadataType="Schema" ID="45d1cde7-2c43-4188-9897-ebf79926ae78" SourceId="1" SourceUrl="https://raw.githubusercontent.com/skat/emcs-b2b-ws/master/wsdl/OIOLedsageDokumentOpret/skat_dk/basis/kontekst/xml/schemas/2006/09/01/TransaktionIdentifikator.xsd" />
+    <MetadataFile FileName="OIOLedsageDokumentOpretService.wsdl" MetadataType="Wsdl" ID="08cc37bc-f3cd-4ac9-9861-fe47add449d9" SourceId="1" SourceUrl="https://raw.githubusercontent.com/skat/emcs-b2b-ws/master/wsdl/OIOLedsageDokumentOpret/OIOLedsageDokumentOpret.wsdl" />
+    <MetadataFile FileName="IE917BeskedTekst.xsd" MetadataType="Schema" ID="7a58eac8-892e-4d39-9a94-2a64f40c3da7" SourceId="1" SourceUrl="https://raw.githubusercontent.com/skat/emcs-b2b-ws/master/wsdl/OIOLedsageDokumentOpret/urn/oio/skat/emcs/1_0_1/IE917BeskedTekst.xsd" />
+    <MetadataFile FileName="FejlStruktur.xsd" MetadataType="Schema" ID="981d1221-b0ad-4b82-a214-dde5b8978261" SourceId="1" SourceUrl="https://raw.githubusercontent.com/skat/emcs-b2b-ws/master/wsdl/OIOLedsageDokumentOpret/skat_dk/basis/kontekst/xml/schemas/2006/09/01/FejlStruktur.xsd" />
+    <MetadataFile FileName="FejlIdentifikator.xsd" MetadataType="Schema" ID="64c0fcca-ecd7-4531-b650-d215cb024b8a" SourceId="1" SourceUrl="https://raw.githubusercontent.com/skat/emcs-b2b-ws/master/wsdl/OIOLedsageDokumentOpret/skat_dk/basis/kontekst/xml/schemas/2006/09/01/FejlIdentifikator.xsd" />
+    <MetadataFile FileName="HovedOplysninger.xsd" MetadataType="Schema" ID="06c600a3-62e2-4334-a212-5d9ba4af0b92" SourceId="1" SourceUrl="https://raw.githubusercontent.com/skat/emcs-b2b-ws/master/wsdl/OIOLedsageDokumentOpret/skat_dk/basis/kontekst/xml/schemas/2006/09/01/HovedOplysninger.xsd" />
+    <MetadataFile FileName="AfgiftOperatoerPunktAfgiftIdentifikator.xsd" MetadataType="Schema" ID="aaa5689d-f47d-498a-8a1f-0c2d3723340d" SourceId="1" SourceUrl="https://raw.githubusercontent.com/skat/emcs-b2b-ws/master/wsdl/OIOLedsageDokumentOpret/urn/oio/skat/emcs/1_0_1/AfgiftOperatoerPunktAfgiftIdentifikator.xsd" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
