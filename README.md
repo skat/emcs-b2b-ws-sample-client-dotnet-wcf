@@ -1,4 +1,40 @@
-# emcs-b2b-ws-sample-client-dotnet-wcf
+# EMCS B2B Sample Web Service Client written in .NET v4.6 using WCF
+
+Sample client for the EMCS B2B Web Service Gateway developed in .NET v4.6 using WCF.
+
+**IMPORTANT NOTICE**: SKAT does not provide any kind of support for the code in this repository.
+This .NET-client is just one example of how a B2B web service can be accessed. The client must not be 
+perceived as a piece of production code but more as an example one can take inspiration from and can use
+to quickly get started to test whether your company can implement a successful call to one of the B2B web 
+service using the company's digital signature. SKAT can not be held responsible if a company uses this client 
+or parts of it in their own systems. 
+
+**VIGTIG MEDDELELSE**: SKAT yder ikke support på kildekoden i nærværende kodebibliotek.
+Denne .NET-klient er kun et eksempel på hvordan B2B webservicene kan tilgås. Klienten skal således ikke 
+opfattes som et stykke produktionskode men mere som en eksempel man kan lade sig inspirere af og kan bruge 
+til hurtigt at komme i gang og få afprøvet om ens virksomhed kan gennemføre et succesfuldt kald til en af 
+B2B webservicene ved at bruge virksomhedens digitale signatur. SKAT kan ikke stå til ansvar hvis en virksomhed
+anvender klienten eller dele af denne i deres egne systemer. 
+
+## Setup Project
+
+The sample client must be configured with **three** parameters that are necessary for the client to run and
+call the test environment of EMCS B2B Web Service Gateway. The parameters can be obtained by contacting 
+SKAT Help Desk.
+
+Once obtained three **attribute values** in `App.config` must be replaced with the corresponding valued provided by
+SKAT Help Desk as follows:
+
+```
+...
+<clientCertificate findValue="CHANGE_ME_FRIENDLY_NAME"
+    storeName="My" x509FindType="FindBySubjectName" />
+...
+<defaultCertificate findValue="CHANGE_ME_THUMBPRINT"
+    storeLocation="LocalMachine" storeName="TrustedPeople" x509FindType="FindByThumbprint" />
+...
+<endpoint address="CHANGE_ME_ENDPOINT"
+```
 
 ## Setup Client Certificate
 
@@ -67,6 +103,10 @@ Click on certificate and on the details tab locate the
 
 **Example:**
 ![mmc_server_certificate_add_snap-in_viewcert_2](/assets/mmc_server_certificate_add_snap-in_viewcert_2.png)
+
+## Run Project
+
+Once `App.config` and certificates have been installed simply run `Program.cs`.
 
 ## Debugging
 
