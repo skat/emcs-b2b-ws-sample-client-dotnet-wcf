@@ -11,10 +11,13 @@ namespace EMCSSampleConsoleApp
 {
     class Program
     {
+        /// <summary>
+        /// Run sample
+        /// </summary>
         static void Main(string[] args)
         {
             // Read configuration from App.config
-            // These four settings are used to configure WCF for the custom binding.
+            // These four settings configure the custom binding.
             string identityDns = ConfigurationManager.AppSettings["client.endpoint.identity.dns"];
             string clientEndpointAddress = ConfigurationManager.AppSettings["client.endpoint.address"];
             string clientCertificateFindValue = ConfigurationManager.AppSettings["behaviors.endpointBehaviors.behavior.clientCredentials.clientCertificate.findValue"];
@@ -48,7 +51,8 @@ namespace EMCSSampleConsoleApp
             ho.TransaktionTidSpecified = true;
             request.HovedOplysninger = ho;
             request.VirksomhedIdentifikationStruktur = struktur;
-            request.IE815Struktur = loadElement("C:/IE815.xml"); 
+            // CHANGE LOCATION if the ie815.xml file is in another location!
+            request.IE815Struktur = loadElement("C:/ie815.xml"); 
             Console.WriteLine("**** REQUEST ****");
             Console.WriteLine("** TransaktionIdentifikator = " + ho.TransaktionIdentifikator);
             Console.WriteLine("** TransaktionTid = " + ho.TransaktionTid);
@@ -86,6 +90,9 @@ namespace EMCSSampleConsoleApp
             Console.WriteLine("-Sample client ended");
         }
 
+        /// <summary>
+        /// Build custom binding and compensate for missing "sign Binary Security Token" option in App.config
+        /// </summary>
         private static CustomBinding BuildCustomBinding()
         {
             var customBinding = new CustomBinding();
@@ -108,6 +115,7 @@ namespace EMCSSampleConsoleApp
             asymmetricSecurityBindingElement.MessageProtectionOrder =
               System.ServiceModel.Security.MessageProtectionOrder.SignBeforeEncrypt;
 
+            // Layout header must be LAX!
             asymmetricSecurityBindingElement.SecurityHeaderLayout = SecurityHeaderLayout.Lax;
             asymmetricSecurityBindingElement.EnableUnsecuredResponse = true;
             asymmetricSecurityBindingElement.IncludeTimestamp = true;
@@ -126,7 +134,7 @@ namespace EMCSSampleConsoleApp
                 AddressingVersion.None),
                 WriteEncoding = new System.Text.UTF8Encoding()
             });
-
+            // For mock service running http only, change to HttpTransportBindingElement here:
             HttpsTransportBindingElement httpbinding = new HttpsTransportBindingElement();
             httpbinding.AuthenticationScheme = AuthenticationSchemes.Anonymous;
             customBinding.Elements.Add(httpbinding);
@@ -134,6 +142,9 @@ namespace EMCSSampleConsoleApp
         }
 
 
+        /// <summary>
+        /// Make XML as String into XMLElement
+        /// </summary>
         private static XmlElement getElementFromString(string xml)
         {
             XmlDocument doc = new XmlDocument();
@@ -141,6 +152,9 @@ namespace EMCSSampleConsoleApp
             return doc.DocumentElement;
         }
 
+        /// <summary>
+        /// Make XML as File into XMLElement
+        /// </summary>
         private static XmlElement loadElement(String file)
         {
             // Create an XmlDocument object.
