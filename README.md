@@ -143,6 +143,8 @@ Run `Program.cs` and console should produce this output:
     </ie:Header>
     <ns26:Body xmlns:ns26="urn:publicid:-:EC:DGTAXUD:EMCS:PHASE3:IE815:V1.92">
     ...
+    REMOVED
+    ...
     </ns26:Body>
 </ie:IE815>
 **** RESPONSE ****

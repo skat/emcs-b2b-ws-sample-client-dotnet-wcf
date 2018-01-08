@@ -53,6 +53,7 @@ namespace EMCSSampleConsoleApp
             request.VirksomhedIdentifikationStruktur = struktur;
             // CHANGE LOCATION if the ie815.xml file is in another location!
             request.IE815Struktur = loadElement("C:/ie815.xml"); 
+            // Print request to console
             Console.WriteLine("**** REQUEST ****");
             Console.WriteLine("** TransaktionIdentifikator = " + ho.TransaktionIdentifikator);
             Console.WriteLine("** TransaktionTid = " + ho.TransaktionTid);
