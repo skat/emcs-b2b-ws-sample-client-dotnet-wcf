@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ie:IE815 xmlns:ie="urn:publicid:-:EC:DGTAXUD:EMCS:PHASE3:IE815:V1.92">
-    <ie:Header xmlns:tms="urn:publicid:-:EC:DGTAXUD:EMCS:PHASE3:TMS:V1.92">
+<ie:IE815 xmlns:ie="urn:publicid:-:EC:DGTAXUD:EMCS:PHASE3:IE815:V2.02">
+    <ie:Header xmlns:tms="urn:publicid:-:EC:DGTAXUD:EMCS:PHASE3:TMS:V2.02">
         <tms:MessageSender>NDEA.DK</tms:MessageSender>
         <tms:MessageRecipient>NDEA.DK</tms:MessageRecipient>
         <tms:DateOfPreparation>2011-10-26</tms:DateOfPreparation>
-        <tms:TimeOfPreparation>11:23:00.803</tms:TimeOfPreparation>
-        <tms:MessageIdentifier>9e1e74a5-aaae-41d6-8280-c3892246e613</tms:MessageIdentifier>
+        <tms:TimeOfPreparation>11:27:00.803</tms:TimeOfPreparation>
+        <tms:MessageIdentifier>9e1e74a5-aaae-41d6-8280-c3892246e783</tms:MessageIdentifier>
     </ie:Header>
-    <ns26:Body xmlns:ns26="urn:publicid:-:EC:DGTAXUD:EMCS:PHASE3:IE815:V1.92">
+    <ns26:Body xmlns:ns26="urn:publicid:-:EC:DGTAXUD:EMCS:PHASE3:IE815:V2.02">
         <ns26:SubmittedDraftOfEAD>
             <ns26:Attributes>
                 <ns26:SubmissionMessageType>1</ns26:SubmissionMessageType>
-                <!-- IMPORTANT: We ONLY set this to 1. This allows us to resend
+                <!-- IMPORTANT: We ONLY set this to 1 to allows us to resend
                  the same document with DateOfDispatch date in the past -->
-                <ns26:DeferredSubmissionFlag>0</ns26:DeferredSubmissionFlag>
+                <ns26:DeferredSubmissionFlag>1</ns26:DeferredSubmissionFlag>
             </ns26:Attributes>
             <ns26:ConsigneeTrader language="da">
                 <ns26:Traderid>DK99025875300</ns26:Traderid>
@@ -75,7 +75,7 @@
                 <ns26:Quantity>100</ns26:Quantity>
                 <ns26:GrossWeight>100</ns26:GrossWeight>
                 <ns26:NetWeight>99</ns26:NetWeight>
-                <ns26:AlcoholicStrength>12</ns26:AlcoholicStrength>
+                <ns26:AlcoholicStrengthByVolumeInPercentage>12</ns26:AlcoholicStrengthByVolumeInPercentage>
                 <ns26:FiscalMark language="da">Nix</ns26:FiscalMark>
                 <ns26:FiscalMarkUsedFlag>1</ns26:FiscalMarkUsedFlag>
                 <ns26:DesignationOfOrigin language="da">Tjo</ns26:DesignationOfOrigin>
@@ -93,7 +93,7 @@
                 </ns26:WineProduct>
             </ns26:BodyEad>
             <ns26:EadDraft>
-                <ns26:LocalReferenceNumber>1562584</ns26:LocalReferenceNumber>
+                <ns26:LocalReferenceNumber>1964466</ns26:LocalReferenceNumber>
                 <ns26:InvoiceNumber>INV026594</ns26:InvoiceNumber>
                 <ns26:InvoiceDate>2011-10-18</ns26:InvoiceDate>
                 <ns26:OriginTypeCode>1</ns26:OriginTypeCode>
