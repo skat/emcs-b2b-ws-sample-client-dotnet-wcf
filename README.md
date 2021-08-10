@@ -41,8 +41,7 @@ the request message, and decrypting the response message.
 
 **Step 1:** Import PKCS#12 file 
 
-On the host machine double click on the PKCS#12 file provided in the **Systems Integrator Package** to
-activate the **Certificate Import Wizard**. 
+On the host machine double click on the PKCS#12 file provided in the **Systems Integrator Package** (also downloadable from [here](https://github.com/skat/emcs-b2b-ws-sample-client-java/blob/master/p12/VOCES_gyldig.p12)) to activate the **Certificate Import Wizard**. 
 
 Follow these steps:
 
@@ -75,7 +74,7 @@ This value is used in:
 
 **Step 1:** Import certificate
 
-Double click on the **server certificate** provided in the **Systems Integrator package**.
+Double click on the **server certificate** provided in the **Systems Integrator package** (also downloadable from [here](https://github.com/skat/emcs-b2b-ws#server-certificates)).
 
 Select **Install Certificate** to activate the **Certificate Import Wizard**. 
 
