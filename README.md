@@ -1,5 +1,7 @@
 # EMCS B2B Sample Web Service Client written in .NET v4.6 using WCF
 
+> **PLEASE NOTE**: This sample code will not run on .NET Core 3.0. For more information: [.NET Core is the Future of .NET](https://devblogs.microsoft.com/dotnet/net-core-is-the-future-of-net/) and [Windows Communication Framework: Should You Leave?](https://blog.inedo.com/dotnet/windows-comm-framework)
+
 Sample client for the EMCS B2B Web Service Gateway developed in C# / .NET v4.6 using WCF.
 
 **IMPORTANT NOTICE**: SKAT does not provide any kind of support for the code in this repository.
@@ -15,6 +17,9 @@ opfattes som et stykke produktionskode men mere som en eksempel man kan lade sig
 til hurtigt at komme i gang og få afprøvet om ens virksomhed kan gennemføre et succesfuldt kald til en af 
 B2B webservicene ved at bruge virksomhedens digitale signatur. SKAT kan ikke stå til ansvar hvis en virksomhed
 anvender klienten eller dele af denne i deres egne systemer. 
+
+
+
 
 ## Setup Project
 
